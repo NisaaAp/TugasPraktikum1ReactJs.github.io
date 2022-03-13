@@ -21,10 +21,9 @@ export default class Hexadesimal extends React.Component {
         let hexa = this.state.hexa
         let pilihan = this.state.pilihan
 
-        let bil = Number(hexa) 
-        let dec = parseInt(bil, 16)
+        
+        let dec = parseInt(hexa, 16)
         let hasil;
-        //jika tidak dikasih Number nanti hasil input terbaca string
 
         if (pilihan === "biner") {
             hasil = dec.toString(2)
